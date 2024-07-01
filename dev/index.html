@@ -1,7 +1,49 @@
-@@include('templates/head.html')
-@@include('templates/header.html')
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#188de7" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>Сборка Markup</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body></body>
+
+</html>
+<header>
+    <div class="container">
+        <a href="index.html" class="logo">
+			<img src="assets/img/logo.svg" class="img-fluid" alt="logo" />
+		</a>
+        <div class="mobile-container">
+            <nav>
+                <a href="#">Цены и сроки</a>
+                <a href="#">Услуги</a>
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Оформить груз</a>
+            </nav>
+            <button type="button" class="btn">Оставить заявку</button>
+        </div>
+        <button type="button" class="btn-burger"></button>
+    </div>
+</header>
 <main class="wrapper home">
-    @@include('templates/first-screen.html')
+    <div class="container">
+        <h1>Hellow, I am first screen</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque sequi laborum, quidem ipsum modi. Illo eius qui veniam laboriosam unde perferendis maiores, consequuntur ab rerum animi veritatis nesciunt.
+    </div>
 </main>
-@@include('templates/footer.html')
- 
+<footer>
+    <div class="container">
+        <a href="markap.html">Markap</a>
+    </div>
+</footer>
+<script async src="assets/js/bootstrap.bundle.min"></script>
+<script async src="assets/js/custom.js"></script>
+</body>
+
+</html>
