@@ -5,6 +5,19 @@ body {
 	color: $primary-light-color;
 }
 
+body.overflow-hidden {
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: #0000008c;
+		backdrop-filter: blur(4px);
+	}
+}
+
 .container {
 	max-width: 1170px;
 	padding-left: $container-padding;

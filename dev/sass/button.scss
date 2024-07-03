@@ -26,25 +26,59 @@
 }
 
 .btn-burger {
-	margin-left: auto;
+	margin: 7px 0 0 auto;
 	position: relative;
-	background-color: #fff;
 	border: none;
-	width: 28px;
-	height: 2px;
+	width: 27px;
+	height: 25px;
+	background-color: transparent;
+	border-top: 2px solid #fff;
+	transition: all .3s;
+
+	&:hover {
+		border-color: $primary-brand-color;
+	}
+
+	&:hover:before,
+	&:hover:after
+	 {
+		background-color: $primary-brand-color;
+	}
+
+	&::after,
+	&::before {
+		width: 28px;
+		height: 2px;
+		background-color: #fff;
+		display: inline-block;
+		transition: all .3s;
+	}
 
 	&::after,
 	&::before {
 		content: "";
 		position: absolute;
-		width: 28px;
-		height: 2px;
-		background-color: #fff;
 		left: 0;
-		top: 11px;
+		top: 9px;
 	}
 
 	&::after {
-		top: 22px;
+		top: 20px;
 	}
-}
+
+	&.active {
+		border-color: transparent;
+		&::before {
+			transform: rotate(230deg);
+			left: 2px;
+		}
+
+		&::after {
+			transform: rotate(-230deg);
+			top: 10px;
+			left: 2px;
+		}
+	}
+} 
+
+

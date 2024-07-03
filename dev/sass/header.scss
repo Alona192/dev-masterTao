@@ -30,4 +30,8 @@ header {
 			}
 		}
 	}
+
+	&.show {
+		display: flex;
+	}
 }
