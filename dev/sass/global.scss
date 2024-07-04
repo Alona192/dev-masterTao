@@ -26,6 +26,13 @@ body.overflow-hidden {
 	margin-right: auto;
 }
 
+.container-xxl {
+	min-width: 1844px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 12px;
+}
+
 a {
 	color: $primary-brand-color;
 	transition: color 0.3s linear;
