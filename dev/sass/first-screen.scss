@@ -30,7 +30,7 @@
 
     .navigation {
         position: absolute;
-        min-width: 1523px;
+        max-width: 1523px;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -70,6 +70,7 @@
     position: static;
     width: 96px;
     color: #fff;
+
     &:hover {
         color: $secondary-brand-color;
     }

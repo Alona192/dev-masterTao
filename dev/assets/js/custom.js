@@ -9,7 +9,7 @@
     
   }
 
-  burger.addEventListener('click', toggleClass)
+  burger.addEventListener('click', toggleClass);
 
   const swiper = new Swiper('.banner-slider', {
     loop: true,
@@ -21,20 +21,20 @@
     },
   
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      enabled: false,
+      //nextEl: '.swiper-button-next',
+      //prevEl: '.swiper-button-prev',
     },
 
     breakpoints: {
       1025: {
-        spaceBetween: 50,
+        //spaceBetween: 50,
         navigation: {
           enabled: true,
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
       },
-    }
-   
+    },
   });
   

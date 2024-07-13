@@ -3,22 +3,10 @@ body {
 	font-family: $font-primary;
 	background-color: $primary-bg-color;
 	color: $primary-light-color;
-
 	overflow: hidden;
 }
 
 body.overflow-hidden {
-	/*&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		background-color: #0000008c;
-		backdrop-filter: blur(4px);
-	}*/
-
 	&::after {
 		content: "";
 		display: block;
@@ -44,7 +32,7 @@ body.overflow-hidden {
 }
 
 .container-xxl {
-	min-width: 1844px;
+	max-width: 1844px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0 12px;
@@ -190,7 +178,3 @@ h6,
 }
 
 
-.swiper {
-	width: 600px;
-	height: 700px;
-  }
