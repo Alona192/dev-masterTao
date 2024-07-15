@@ -14,6 +14,17 @@
 		border-color: $secondary-brand-color;
 		color: $primary-light-color;
 	}
+
+	.icon {
+		width: 27px;
+		height: 27px;
+		margin: 0 0 0 45px;
+		transition: 0.3s all linear;
+	}
+
+	&:hover .icon {
+		filter: grayscale(1) brightness(1000%);
+	}
 }
 
 .btn-outline {
