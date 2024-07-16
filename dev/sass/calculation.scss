@@ -33,6 +33,10 @@
     
 }
 
+.calculation {
+    padding: 100px 0 113px;
+}
+
 label {
     font-weight: 600;
     font-size: 15px;
@@ -42,7 +46,7 @@ label {
 }
 
 .calculation-form {
-    padding: 48px 50px 61px;
+    padding: 50px 50px 61px 50px;
     background: $secondary-bg-color;
     border-radius: 20px;
     max-width: 626px;
