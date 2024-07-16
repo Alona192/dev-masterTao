@@ -86,11 +86,16 @@
 			background-size: cover;
 			background-position: center;
 			
+			h1 {
+				max-width: 290px;
+			}
+
 			h5 {
 				font-size: 16px;
 				padding: 0 12px;
 				line-height: 1.4;
 				margin-bottom: 18px;
+				max-width: 300px;
 			}
 
 			&::after {
