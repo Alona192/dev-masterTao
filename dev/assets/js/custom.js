@@ -37,4 +37,16 @@
       },
     },
   });
+
+  const fileInput = document.querySelector('#product-photo');
   
+
+  const typeFile = document.querySelectorAll('.custom-file');
+  const fileName = document.querySelector('.file-name');
+
+  typeFile.forEach(item => {
+    item.addEventListener('change', () => {
+      //const fileName = item.closest('.form-column').querySelector('.fileName')
+      fileName.innerHTML = item.files[0].name;
+    })
+  })

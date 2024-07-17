@@ -1,4 +1,9 @@
-
+.calculation {
+    .container {
+        position: relative;
+    }
+    
+}
 .input-box {
 
     margin: 0 0 17px;
@@ -46,7 +51,7 @@ label {
 }
 
 .calculation-form {
-    padding: 50px 50px 61px 50px;
+    padding: 48px 50px 44px;
     background: $secondary-bg-color;
     border-radius: 20px;
     max-width: 626px;
@@ -75,6 +80,18 @@ label {
             }
         }
     }
+
+}
+
+.calculation-decoration {
+    position: absolute;
+    left: 612px;
+    bottom: -115px;
+    max-width: 560px;
+    width: 29.167vw;
+    min-width: 370px;
+
+    
 }
 
 .form-row {
@@ -84,6 +101,13 @@ label {
 
 .form-column {
     width: 100%;
+}
+
+.file-name {
+    //margin-bottom: 12px;
+    font-size: 15px;
+    margin: -3px 0 15px 0;
+    line-height: 1;
 }
 
 .control-row {
@@ -110,6 +134,7 @@ label {
         border-radius: 10px;
         cursor: pointer;
         transition: .3s;
+        margin-bottom: 12px;
     
         &:hover {
             border-color: $secondary-brand-color;
@@ -117,4 +142,5 @@ label {
         }
     }
 }
+
 
