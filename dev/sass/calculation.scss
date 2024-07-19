@@ -90,8 +90,6 @@ label {
     max-width: 560px;
     width: 29.167vw;
     min-width: 370px;
-
-    
 }
 
 .form-row {
@@ -141,6 +139,12 @@ label {
             color: $secondary-brand-color;
         }
     }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 

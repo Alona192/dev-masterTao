@@ -1,3 +1,12 @@
 @media (min-width: 1025px) {
-	
+	.advantages {
+        .swiper-wrapper {
+            flex-wrap: wrap;
+            gap: 23px 0;
+          }
+
+          .swiper-slide {
+            min-width: 25%;
+          }
+    } 
 }

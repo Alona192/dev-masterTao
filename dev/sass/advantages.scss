@@ -1,0 +1,33 @@
+.advantages .swiper-pagination {
+    position: static;
+    margin-top: 10px;
+  }
+  
+  .advantage {
+    max-width: 263px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .advantage-img {
+    width: 113px;
+    height: 113px;
+    margin: 0 auto 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6C7188;
+    border-radius: 50%;
+  }
+  .advantage-img img {
+    width: 93px;
+    height: 93px;
+    background-color: #89C249;
+    border-radius: 50%;
+    object-fit: scale-down;
+    padding: 10px;
+  }
+  .advantage-title {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0;
+  }

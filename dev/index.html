@@ -87,76 +87,152 @@
             </div>
         </div>
     </section>
-</main>
 
+    <section class="calculation accent">
+        <div class="container">
+            <div class="template-title case-3">
+                <h2>Получить расчет стоимости доставки вашего груза</h2>
+            </div>
+            <form class="calculation-form">
+                <div class="form-row">
+                    <div class="form-column">
+                        <div class="input-box">
+                            <label for="category">Категория товара:</label>
+                            <input id="category" type="text" placeholder="Категория товара">
+                        </div>
+                        <div class="input-box">
+                            <label for="weight">Вес груза (кг):</label>
+                            <input id="weight" type="number" placeholder="Введите вес груза (кг)">
+                        </div>
+                    </div>
+                
+                    <div class="form-column">
+                        <div class="input-box">
+                            <label for="price">Стоимость груза:</label>
+                            <input id="price" type="number" placeholder="Введите стоимость груза">
+                        </div>
+                        <div class="input-box">
+                            <label for="volume">Обьем груза (м3):</label>
+                            <input id="volume" type="number" placeholder="Введите обьем груза (м3)">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <div class="control-row checkbox">
+                            <input id="insurance" type="checkbox" name="formalization">
+                            <label for="insurance">Страховка</label>
+                        </div>
+                        <div class="control-row checkbox">
+                            <input id="customs" type="checkbox" name="formalization">
+                            <label for="customs">Таможенное оформление</label>
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <div class="input-box">
+                            <label for="invoice">Код ТН ВЭД:</label>
+                            <input id="invoice" type="text" placeholder="Введите код">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                            <div class="file-name"></div>
+                            <input id="product-foto" class="custom-file" type="file">
+                            <label for="product-foto">Загрузить фото товара</label>
+                    </div>
+                </div>
 
-
-<section class="calculation accent">
-    <div class="container">
-        <div class="template-title case-3">
-            <h2>Получить расчет стоимости доставки вашего груза</h2>
+                <div class="form-row">
+                    <div class="form-column">
+                        <div class="input-box">
+                            <button type="button" class="btn btn-primary btn-lg">Следующий шаг<img src="assets/img/Vector.svg" class="icon" alt="icon"></button>
+                        </div>
+                    </div>
+                </div>  
+            </form>
+            <img src="assets/img/man.png" class="calculation-decoration" alt="decoration">
         </div>
-        <form class="calculation-form">
-            <div class="form-row">
-                <div class="form-column">
-                    <div class="input-box">
-                        <label for="category">Категория товара:</label>
-                        <input id="category" type="text" placeholder="Категория товара">
-                    </div>
-                    <div class="input-box">
-                        <label for="weight">Вес груза (кг):</label>
-                        <input id="weight" type="number" placeholder="Введите вес груза (кг)">
-                    </div>
-                </div>
-               
-                <div class="form-column">
-                    <div class="input-box">
-                        <label for="price">Стоимость груза:</label>
-                        <input id="price" type="number" placeholder="Введите стоимость груза">
-                    </div>
-                    <div class="input-box">
-                        <label for="volume">Обьем груза (м3):</label>
-                        <input id="volume" type="number" placeholder="Введите обьем груза (м3)">
-                    </div>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-column">
-                    <div class="control-row checkbox">
-                        <input id="insurance" type="checkbox" name="formalization">
-                        <label for="insurance">Страховка</label>
-                    </div>
-                    <div class="control-row checkbox">
-                        <input id="customs" type="checkbox" name="formalization">
-                        <label for="customs">Таможенное оформление</label>
-                    </div>
-                </div>
-                <div class="form-column">
-                    <div class="input-box">
-                        <label for="invoice">Код ТН ВЭД:</label>
-                        <input id="invoice" type="text" placeholder="Введите код">
-                    </div>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-column">
-                        <div class="file-name"></div>
-                        <input id="product-foto" class="custom-file" type="file">
-                        <label for="product-foto">Загрузить фото товара</label>
-                </div>
-            </div>
+    </section>
 
-            <div class="form-row">
-                <div class="form-column">
-                    <div class="input-box">
-                        <button type="button" class="btn btn-primary btn-lg">Следующий шаг<img src="assets/img/Vector.svg" class="icon" alt="icon"></button>
+    <section class="acsent advantages">
+        <div class="container">
+            <div class="template-title">
+                <h2>Почему стоит выбрать именно нас?</h2>
+            </div>
+            <div class="swiper" id="advantages">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage-img">
+                                <img src="assets/img/advantage1.svg" alt="">
+                            </div>
+                            <h5 class="advantage-title">Таможенное оформление груза</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage-img">
+                                <img src="assets/img/advantage2.svg" alt="">
+                            </div>
+                            <h5 class="advantage-title">Страховка груза</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage-img">
+                                <img src="assets/img/advantage3.svg" alt="">
+                            </div>
+                            <h5 class="advantage-title">Проверка товара на брак</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage-img">
+                                <img src="assets/img/advantage4.svg" alt="">
+                            </div>
+                            <h5 class="advantage-title">Доставка в любой город Украины</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage-img">
+                                <img src="assets/img/advantage5.svg" alt="">
+                            </div>
+                            <h5 class="advantage-title">Консолидация на складе</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage-img">
+                                <img src="assets/img/advantage6.svg" alt="">
+                            </div>
+                            <h5 class="advantage-title">Ответственное хранение груза</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage-img">
+                                <img src="assets/img/advantage7.svg" alt="">
+                            </div>
+                            <h5 class="advantage-title">Помощь в оплате товара</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage-img">
+                                <img src="assets/img/advantage8.svg" alt="">
+                            </div>
+                            <h5 class="advantage-title">Упаковка, переупаковка, паллетирование груза к международной
+                        перевозке</h5>
+                        </div>
                     </div>
                 </div>
-            </div>  
-        </form>
-        <img src="assets/img/man.png" class="calculation-decoration" alt="decoration">
-    </div>
-</section>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
     <div class="container">

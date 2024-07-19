@@ -242,7 +242,24 @@ h6,
     }
 }
 
-section {
-	padding: 90px 0 115px;
-}
+  section {
+	padding: 90px 0px 100px;
+  }
 
+  section.acsent {
+	position: relative;
+  }
+  
+  section.acsent::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	max-width: 1820px;
+	width: calc(100% - 30px);
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	border-radius: 20px;
+	background-color: #363A4D;
+  }
