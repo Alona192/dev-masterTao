@@ -140,10 +140,12 @@
 	.calculation-decoration {
 		display: none;
 	}
+
+	.advantages.acsent::after {
+		border-radius: 0;
+		width: 100%;
+	  }
 }
 
-.advantages.acsent::after {
-	border-radius: 0;
-	width: 100%;
-  }
+
 
