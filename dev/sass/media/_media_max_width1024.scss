@@ -1,6 +1,10 @@
 @media screen and (max-width: 1024px) {
+	section {
+		padding: 55px 0 60px;
+	}
+
 	.container {
-		//padding: 0 70px;
+		padding: 0 20px;
 	}
 
 	header {
@@ -144,6 +148,35 @@
 	.advantages.acsent::after {
 		border-radius: 0;
 		width: 100%;
+	  }
+
+	  .template-title {
+		padding-bottom: 45px;
+
+		h2 {
+			font-size: 24px;
+		}
+
+		h3 {
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		&::after {
+			bottom: 34px;
+		}
+
+		&.case-3 {
+			&::after {
+				display: block;
+			}
+			text-align: center;
+			h2 {
+				&::after {
+					display: none;
+				}
+			}
+		}
 	  }
 }
 
