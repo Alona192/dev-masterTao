@@ -52,7 +52,7 @@
   })
 
 const advantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length;
-console.log(advantagesSlideLength);
+
 
 const swiperAdvantages = new Swiper('#advantages', {
     speed: 400,
@@ -77,8 +77,53 @@ const swiperAdvantages = new Swiper('#advantages', {
 
         pagination: {
           enabled: false,
-        }
-      }
-    }
+        },
+      },
+    },
   });
+
+const swiperTemplate = new Swiper('.slider-template', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    enabled: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    enabled: true,
+    clickable: true,
+  },
+  
+  breakpoints: {
+    1025: {
+      slidesPerView: 2,
+      pagination: {
+        enabled: false,
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        enabled: true,
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    },
+    
+    1140: {
+      slidesPerView: 3,
+      navigation: {
+        enabled: true,
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        enabled: false,
+        el: '.swiper-pagination',
+      }
+    },
+  },
+});
+
+ 
+  
   
