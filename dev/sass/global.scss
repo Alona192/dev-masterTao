@@ -33,7 +33,10 @@ body.overflow-hidden {
 
 .container-lg {
 	@extend .container;
-	max-width: 1323px;
+	padding: 0;
+	max-width: 1328px;
+	
+	
 }
 
 .container-xxl {
@@ -289,3 +292,7 @@ ul {
 		list-style: none;
 	}
 }
+
+
+
+

@@ -1,11 +1,29 @@
+/*.acsent {
+    .slider-template {
+        &::after,
+        &::before {
+            background-color: #363a4d;
+        }
+    }
+}
+*/
 .card {
     width: 360px;
     background: #363a4d;
-    padding: 0 20px 27px;
+    padding: 0 20px 33px;
     border-radius: 20px;
+    overflow: hidden;
     text-align: center;
+    border: none;
+
     .img-box {
         margin: 0 -20px 27px;
+
+        img {
+            height: 229px;
+            object-fit: cover;
+            object-position: center;
+        }
     }
 
     .card-title {
@@ -21,6 +39,8 @@
         gap: 27px;
         img {
             margin-right: 10px;
+            max-width: 24px;
+            max-height: 24px;
         }
     }
 
@@ -60,3 +80,17 @@
         }
     }
 }
+
+.swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, -25px);
+}
+
+.swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, -20px);
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 30px;
+}
+

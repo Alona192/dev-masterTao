@@ -86,9 +86,12 @@ const swiperTemplate = new Swiper('.slider-template', {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
+
   navigation: {
-    enabled: false,
-  },
+		enabled: false,
+		//nextEl: ".swiper-button-prev",
+		//prevEl: ".swiper-button-next",
+	},
   pagination: {
     el: '.swiper-pagination',
     enabled: true,
@@ -110,6 +113,19 @@ const swiperTemplate = new Swiper('.slider-template', {
     },
     
     1140: {
+      slidesPerView: 2,
+      navigation: {
+        enabled: true,
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        enabled: false,
+        el: '.swiper-pagination',
+      }
+    },
+
+    1300: {
       slidesPerView: 3,
       navigation: {
         enabled: true,
@@ -124,6 +140,13 @@ const swiperTemplate = new Swiper('.slider-template', {
   },
 });
 
+const sliderTemplate = document.querySelectorAll('.slider-template')
+
+sliderTemplate.forEach(slider => {
+  slider.closest('.container').classList.add('container-lg')
+  slider.closest('.container').classList.remove('container')
+})
+  
  
   
   

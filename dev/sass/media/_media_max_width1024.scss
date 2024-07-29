@@ -3,9 +3,7 @@
 		padding: 55px 0 60px;
 	}
 
-	.container {
-		padding: 0 20px;
-	}
+	
 
 	header {
 		.container {
@@ -177,7 +175,33 @@
 				}
 			}
 		}
-	  }
+	}
+
+	.sliper-template {
+		padding-right: 0;
+		padding-left: 0;
+		max-width: 335px;
+	}
+
+	.card {
+		width: 335px;
+		padding: 0 23px 33px;
+		text-align: center;
+
+		.img-box {
+			margin: 0 -23px 27px;
+		}
+
+		.btn-row {
+			gap: 12px;
+
+			.btn {
+				max-width: 138px;
+				padding: 13px 8px;
+			}
+		}
+	}
+	  
 }
 
 

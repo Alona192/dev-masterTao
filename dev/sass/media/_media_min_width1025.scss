@@ -8,7 +8,28 @@
           .swiper-slide {
             min-width: 25%;
           }
-    } 
+  } 
 
+  .slider-template {
+      padding-left: 92px;
+      padding-right: 92px;
     
+        &::after,
+        &::before {
+            content: "";
+            width: 92px;
+            height: 100%;
+            position: absolute;
+            right: -13px;
+            top: 0;
+            background-color: #282b38;
+            z-index: 2;
+        }
+    
+        &::before {
+            right: auto;
+            left: -13px;
+        }
+      
+  }  
 }
