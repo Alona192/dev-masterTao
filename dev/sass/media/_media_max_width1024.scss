@@ -177,11 +177,12 @@
 		}
 	}
 
-	.sliper-template {
+	.slider-template {
 		padding-right: 0;
 		padding-left: 0;
 		max-width: 335px;
 	}
+	
 
 	.card {
 		width: 335px;
@@ -199,6 +200,16 @@
 				max-width: 138px;
 				padding: 13px 8px;
 			}
+		}
+	}
+
+	.slider-template {
+		.swiper-horizontal>.swiper-pagination-bullets,
+		.swiper-pagination-bullets.swiper-pagination-horizontal,
+		.swiper-pagination-custom,
+		.swiper-pagination-fraction {
+			position: static;
+			margin-top: 32px;
 		}
 	}
 	  

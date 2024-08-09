@@ -12,11 +12,14 @@
     .calculation-form {
         padding: 51px 30px 34px;
 
-        .btn-lg  {
+        .btn-lg {
             width: 100%;
-            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
             .icon {
-                margin: 0 -14px 0 auto;
+                margin-left: 50px;
             }
         }
     }

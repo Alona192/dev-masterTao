@@ -10,11 +10,12 @@
 .card {
     width: 360px;
     background: #363a4d;
-    padding: 0 20px 33px;
+    padding: 0 20px 30px;
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
     border: none;
+    min-height: 482px;
 
     .img-box {
         margin: 0 -20px 27px;
@@ -73,6 +74,7 @@
     .btn-row {
         display: flex;
         gap: 14px;
+        margin-top: auto;
         .btn {
             width: 50%;
             justify-content: center;
@@ -89,8 +91,30 @@
     right: var(--swiper-navigation-sides-offset, -20px);
 }
 
-.swiper-pagination {
-    position: static;
-    margin-top: 30px;
+.services {
+    .card {
+        text-align: left;
+        justify-content: flex-end;
+        .btn-row {
+            margin-top: initial;
+        }
+        > * {
+            z-index: 1;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+        }
+        p {
+            color: #fff;
+        }
+    }
 }
+
+
 

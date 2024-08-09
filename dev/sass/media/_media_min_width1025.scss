@@ -13,6 +13,10 @@
   .slider-template {
       padding-left: 92px;
       padding-right: 92px;
+      .swiper-pagination {
+        position: static;
+        margin-top: 30px;
+    }
     
         &::after,
         &::before {
@@ -31,5 +35,14 @@
             left: -13px;
         }
       
-  }  
+  } 
+  
+  .services {
+    .slider-template {
+      &::after,
+      &::before {
+          background-color: #363A4D;
+      }
+    }
+  }
 }
